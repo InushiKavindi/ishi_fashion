@@ -1,0 +1,77 @@
+@charset "UTF-8";
+
+/* General body styling */
+body {
+    font-family: Arial, sans-serif;
+    background: #3f273f;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    margin: 0;
+}
+
+/* Main content area */
+.main-content {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px; /* Adds spacing around the profile container */
+}
+
+/* Profile container styling */
+.profile-container {
+    background: #fff;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.5);
+    max-width: 500px;
+    width: 100%;
+}
+
+/* Header styling */
+.profile-header {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.profile-header h1 {
+    margin: 0;
+    font-size: 24px;
+    color: #333;
+}
+
+/* Profile details styling */
+.profile-details {
+    font-size: 16px;
+    line-height: 1.8;
+}
+
+.profile-details span {
+    font-weight: bold;
+    color: #333;
+}
+
+/* Button container */
+.button-container {
+    display: flex;
+    justify-content: flex-end;
+    gap: 10px;
+    margin-top: 20px;
+}
+
+/* Buttons styling */
+.Update-link, .Delete-button button {
+    background-color: #da5ec5;
+    color: black;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    text-decoration: none;
+}
+
+.Update-link:hover, .Delete-button button:hover {
+    opacity: 0.8;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+}

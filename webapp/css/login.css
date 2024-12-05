@@ -1,0 +1,85 @@
+@charset "UTF-8";
+
+ /* General body styling */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh; /* Ensures the page height fills the viewport */
+            
+        }
+
+        /* Main content area styling */
+        .main-content {
+            flex: 1; /* Makes this area grow and push the footer to the bottom */
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background: #3f273f;
+        }
+
+        /* Modal background */
+        .login-form {
+            background: #fff;
+            padding: 20px 30px;
+            border-radius: 10px;
+            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.5);
+            max-width: 400px;
+            width: 100%;
+        }
+
+        /* Input fields styling */
+        .login-form input[type="email"],
+        .login-form input[type="password"] {
+            width: 95%;
+            padding: 10px;
+            margin: 10px 0;
+            border-radius: 5px;
+            border: 1px solid #ddd;
+            font-size: 14px;
+        }
+
+        /* Submit button styling */
+        .login-form input[type="submit"] {
+            width: 100%;
+            padding: 12px;
+            background-color: #da5ec5;
+            color: black;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 16px;
+            transition: background-color 0.3s;
+        }
+
+        /* Hover effect for submit button */
+        .login-form input[type="submit"]:hover {
+            opacity: 0.8;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+        }
+
+        /* Placeholder color */
+        ::placeholder {
+            color: #aaa;
+        }
+
+        /* Registration link styling */
+        .register-text {
+            display: block;
+            margin-top: 15px;
+            text-align: center;
+            font-size: 14px;
+        }
+
+        /* Blue part of the registration link */
+        .register-link {
+            color: #e075e0;
+            text-decoration: none;
+            transition: color 0.3s;
+        }
+
+        /* Hover effect for blue part */
+        .register-link:hover {
+            color: #9e349e;
+        }
