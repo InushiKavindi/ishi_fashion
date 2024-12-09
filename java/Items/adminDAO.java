@@ -10,31 +10,28 @@ import user.user;
 
 public class adminDAO {
 	
-	public user validate(String email,String password) {
+	public admin validate(String username,String password) {
 		
-		 user user = null;
-	        String sql = "SELECT * FROM user WHERE email = ? AND password = ?";
+		admin admin = null;
+	        String sql = "SELECT * FROM admins WHERE username = ? AND password = ?";
 	        try (Connection connection = DatabaseConnectionUtil.getConnection();
 	             PreparedStatement preparedStatement = connection.prepareStatement(sql)) {
 	            
-	            preparedStatement.setString(1, email);
+	            preparedStatement.setString(1, username);
 	            preparedStatement.setString(2, password);
 
 	            ResultSet resultSet = preparedStatement.executeQuery();
 	            if (resultSet.next()) {
-	                user = new user(
-	                    resultSet.getInt("id"),
-	                    resultSet.getString("name"),
-	                    resultSet.getString("email"),
-	                    resultSet.getString("password"),
-	                    resultSet.getString("phone"),
-	                    resultSet.getString("address")
-	                );
+	            	admin = new admin(
+	                    resultSet.getInt("id"),	                  
+	                    resultSet.getString("username"),
+	                    resultSet.getString("password")
+	                    );
 	            }
 	        } catch (SQLException e) {
 	            e.printStackTrace();
 	        }
-	        return user;
+	        return admin;
 	}
 
 }

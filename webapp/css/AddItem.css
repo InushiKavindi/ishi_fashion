@@ -1,0 +1,112 @@
+@charset "UTF-8";
+
+/* General Styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+}
+
+/* Container for the entire page */
+.add-item {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 500px;
+    margin-left: 40%;
+    position: relative;
+    top: 70px;
+}
+
+/* Add Item Form */
+.add-item h2 {
+    text-align: center;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+.add-item form {
+    display: flex;
+    flex-direction: column;
+    
+}
+
+.add-item input, .add-item textarea {
+    margin-bottom: 10px;
+    padding: 12px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+.add-item textarea {
+    resize: vertical;
+    height: 100px;
+}
+
+.add-item input[type="submit"] {
+    background-color: black;
+    color: white;
+    border: none;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.add-item input[type="submit"]:hover {
+    opacity: 0.8;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+}
+
+
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .add-item, .items-table {
+        width: 90%;
+        padding: 15px;
+    }
+
+    .add-item input, .add-item textarea {
+        font-size: 14px;
+    }
+    
+}
+
+
+/* Dropdown (select) styling */
+.add-item select {
+    margin-bottom: 10px;
+    padding: 12px;
+    font-size: 16px;
+    border: 1.5px solid #ccc;
+    border-radius: 4px;
+    background-color: #fff;
+    color: #666; /* Placeholder text color */
+    cursor: pointer;
+}
+
+/* Change text color for selected options */
+.add-item select option {
+    color:black; /* Regular option text color */
+}
+
+/* Hover effect */
+.add-item select:hover {
+    border-color: black;
+}
+
+/* Focus effect */
+.add-item select:focus {
+    border: 2px solid #ccc;
+    border-color: black;
+    
+}
+
+/* Add compatibility for older browsers */
+.add-item select::-ms-expand {
+    display: none; /* Hides default arrow for IE */
+}
+

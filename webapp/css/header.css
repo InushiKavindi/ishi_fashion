@@ -1,55 +1,55 @@
 @charset "UTF-8";
-/* General body styling */
+
 body {
     
-    padding-top: 80px; /* Adjust this to the height of your navbar */
+    padding-top: 80px; 
 }
 
 /* Navbar Background and Padding */
 .navbar {
-    background-color: #f8f9fa; /* Light gray background */
-    padding: 1rem 1.5rem; /* Adjust padding for better spacing */
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.3); /* Add subtle shadow */
+    background-color: #f8f9fa; 
+    padding: 1rem 1.5rem; 
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.3); 
 }
 
 /* Adjusting Offcanvas for responsiveness */
 @media (max-width: 767px) {
     body {
   
-        padding-top: 100px; /* Adjust for smaller screens if necessary */
+        padding-top: 100px; 
     }
 }
 
 
 /* Navigation Items Spacing */
 .navbar-nav .nav-item {
-    margin-right: 1.5rem; /* Space between each nav item */
+    margin-right: 1.5rem;
 }
 
 .navbar-nav .nav-item:last-child {
-    margin-right: 0; /* Remove spacing for the last item */
+    margin-right: 0; 
 }
 
 /* Adjust Navbar Brand (Logo) */
 .navbar-brand img {
-    margin-right: 1rem; /* Add spacing between logo and content */
-    height: 50px; /* Keep consistent height */
+    margin-right: 1rem;
+    height: 50px;
 }
 
 /* Offcanvas Styling for Nav Items */
 .offcanvas-body .nav-item {
-    margin-bottom: 1rem; /* Add spacing in the offcanvas menu */
+    margin-bottom: 1rem; 
     
 }
 
 .offcanvas-body .nav-item:last-child {
-    margin-bottom: 0; /* Remove spacing for the last item */
+    margin-bottom: 0; 
 }
 
 /* Active Link Styling */
 .nav-link active {
     font-weight: bold;
-    color:  black; /* Black color for the active link */
+    color:  black; 
     
 }
 
@@ -57,15 +57,15 @@ body {
     color:  #da5ec5; 
 }
 
-/* Navbar Toggler Button */
+
 .navbar-toggler {
     border: none;
 }
 
-/* Dropdown Styling */
+
 .navbar .dropdown-menu {
     z-index: 1050;
-    border-radius: 0.5rem; /* Slightly rounded dropdown */
+    border-radius: 0.5rem; 
     padding: 0.5rem 0;
 }
 
@@ -75,7 +75,7 @@ body {
 }
 
 .navbar .dropdown-item:hover {
-    background-color: #f8f9fa; /* Light gray highlight */
+    background-color: #f8f9fa; 
     color:  #da5ec5;
 }
 
@@ -85,30 +85,47 @@ body {
 
 /* Custom close button style */
 .offcanvas-header .btn-close {
-    background-color: transparent; /* Remove the default background */
-    border: none; /* Remove the border */
-    color: black; /* Set custom color for the close button */
-    font-size: 1.25rem; /* Make the close button larger */
-    line-height: 1.25rem; /* Ensure it's centered */
-    opacity: 1; /* Ensure button is fully opaque */
-    transition: color 0.3s ease, transform 0.3s ease; /* Smooth transition on hover */
+    background-color: transparent; 
+    border: none; 
+    color: black; 
+    font-size: 1.25rem; 
+    line-height: 1.25rem; 
+    opacity: 1; 
+    transition: color 0.3s ease, transform 0.3s ease; 
 }
 
-/* Close button hover effect */
+
 .offcanvas-header .btn-close:hover {
-    color: black; /* Darker color on hover */
-    transform: scale(1.1); /* Slightly enlarge the button on hover */
+    color: black;
+    transform: scale(1.1); 
 }
 
-/* Close button focus effect */
+
 .offcanvas-header .btn-close:focus {
-    outline:auto; /* Remove focus outline */
-    box-shadow: none; /* Remove box-shadow */
+    outline:auto; 
+    box-shadow: none; 
 }
 
 /* For smaller screens, increase the size of the button */
 @media (max-width: 767px) {
     .offcanvas-header .btn-close {
-        font-size: 1.5rem; /* Larger close button for better visibility on small screens */
+        font-size: 1.5rem; 
     }
 }
+
+
+
+
+.bg-pink {
+    background-color: black !important;
+    color: white !important; 
+}
+
+/*Adjust font size and padding for the badge */
+#cart-count {
+    font-size: 0.9rem;
+    padding: 4px 8px;
+    border-radius: 50%;
+    margin-left: 5px;
+}
+

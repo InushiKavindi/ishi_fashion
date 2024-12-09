@@ -1,0 +1,57 @@
+@charset "UTF-8";
+
+/* General styling for the side menu */
+.side-menu {
+    width: 220px;
+    height: 100vh;
+    background-color:  #3f273f; /* Dark background */
+    color: #fff;
+    position: fixed;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 20px;
+}
+
+/* Dashboard title */
+.Dashboard-name h1 {
+    font-size: 24px;
+    margin-bottom: 50px;
+    
+}
+
+/* Navigation list */
+.side-menu ul {
+    list-style-type: none;
+    padding: 0;
+    width: 100%;
+}
+
+/* Individual list items */
+.side-menu ul li {
+    width: 100%;
+    text-align: center;
+    padding: 15px 0;
+    transition: background-color 0.3s ease;
+}
+
+/* Style for links inside the side menu */
+.side-menu ul li a {
+    text-decoration: none;
+    color: #fff; /* White text for links */
+    font-size: 18px;
+    display: block;
+    width: 100%;
+    height: 100%;
+}
+
+/* Hover effect for links */
+.side-menu ul li:hover {
+    background-color: white; /* Slightly lighter on hover */
+    
+}
+
+/* Hover effect for links */
+.side-menu ul li a:hover {
+    color: black; /* Font color changes to black */
+}

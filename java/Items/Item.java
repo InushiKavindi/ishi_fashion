@@ -7,18 +7,20 @@ public class Item {
     private String category;
     private Double price;
     private String description;
+    private String image;
     
     public Item() {
     	
     }
     
-	public Item(int id, String i_name, String category, Double price, String description) {
+	public Item(int id, String i_name, String category, Double price, String description,String image) {
 		super();
 		this.id = id;
 		this.i_name = i_name;
 		this.category = category;
 		this.price = price;
 		this.description = description;
+		this.image = image;
 	}
 
 	public int getId() {
@@ -61,6 +63,12 @@ public class Item {
 		this.description = description;
 	}
     
-    
+	public String getImage() {
+		return image;
+	}
+
+	public void setImage(String image) {
+		this.image = image;
+	}
 
 }

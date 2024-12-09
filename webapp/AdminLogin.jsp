@@ -4,17 +4,17 @@
 <html>
 <head>
 <meta charset="UTF-8">
+<link rel="stylesheet" href="css/login.css">
 <title>Admin</title>
 </head>
 <body>
 
-<!-- header -->
-    <jsp:include page="header.jsp" />
+
 
     <!-- Main content -->
     <div class="main-content">
         <form action="AdminLoginServlet" method="post" class="login-form">
-            <input type="email" name="email" placeholder="Email" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,3}" required>
+            <input type="text" name="username" placeholder="Username"  required>
             <input type="password" name="password" placeholder="Password" required>
             <input type="submit" value="Login">
             <!-- Registration Text and Link -->
@@ -25,8 +25,7 @@
         </form>
     </div>
 
-    <!-- footer -->
-    <jsp:include page="footer.jsp" />
+    
 
 </body>
 </html>

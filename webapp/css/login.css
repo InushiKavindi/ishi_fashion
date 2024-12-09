@@ -31,7 +31,8 @@
 
         /* Input fields styling */
         .login-form input[type="email"],
-        .login-form input[type="password"] {
+        .login-form input[type="password"],
+        .login-form input[type="text"] {
             width: 95%;
             padding: 10px;
             margin: 10px 0;

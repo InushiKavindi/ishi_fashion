@@ -1,0 +1,94 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins',sans-serif;
+}
+
+body{
+    min-height: 100vh;
+}
+
+a{
+	
+    text-decoration: none;
+}
+
+li{
+	
+    list-style: none;
+}
+
+h2{
+	color: black;
+	height: 10vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+
+
+
+
+
+
+
+.main-content {
+    margin-left: 30vh;
+    padding: 20px;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+table th, table td {
+    padding: 10px;
+    text-align: center;
+    border: 1px solid #6e6e6e;
+}
+
+.update-btn{
+    background-color: black;
+    padding: 10px 20px;
+    color: white;
+    border: 1px solid #333;  /* Add a border to make sure it's visible */
+    cursor: pointer;
+    border-radius: 5px;
+    visibility: visible;
+}
+
+.update-btn {
+    background-color: black;
+    margin-bottom: 20px;
+}
+
+.delete-btn {
+    background-color: black;
+    padding: 10px 20px;
+    color: white;
+    border: 1px solid #333;  /* Add a border to make sure it's visible */
+    cursor: pointer;
+    border-radius: 5px;
+    visibility: visible; /* Make sure it's not set to hidden */
+}
+
+
+.update-btn:hover {
+    opacity: 0.8;
+}
+
+.delete-btn:hover {
+    opacity: 0.8;
+}
+
+/* Table row hover effect */
+table tbody tr:hover {
+    background-color: #f2f2f2; /* Light gray background on hover */
+    cursor: pointer; /* Optional: Change cursor to a pointer */
+    transition: background-color 0.3s ease; /* Smooth hover transition */
+}
+

@@ -1,0 +1,120 @@
+@charset "UTF-8";
+
+/* Basic Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body and Layout */
+body {
+    font-family: 'Poppins',sans-serif;
+    background-color: #f4f4f4;    
+    
+}
+
+
+/* Form Container */
+form {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 500px;
+    margin-left: 40%;
+    position: relative;
+    top: 100px;
+}
+
+/* Form Title */
+h2 {
+    text-align: center;
+    margin-bottom: 20px;
+    font-size: 1.8em;
+    color: #333;
+}
+
+/* Form Elements */
+input, select, textarea {
+    width: 100%;
+    padding: 12px;
+    margin: 8px 0;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    font-size: 1em;
+}
+
+/* Input Textarea */
+textarea {
+	font-family: 'Poppins',sans-serif;
+    resize: vertical;
+    height: 100px;
+}
+
+/* Focus Effect */
+input:focus, select:focus, textarea:focus {
+    border-color: #007bff;
+    outline: none;
+}
+
+/* Button Styling */
+input[type="submit"] {
+    background-color:  black;
+    color: white;
+    font-size: 1.2em;
+    border: none;
+    cursor: pointer;
+    padding: 12px;
+    border-radius: 4px;
+    width: 100%;
+    transition: background-color 0.3s ease;
+}
+
+input[type="submit"]:hover {
+    opacity: 0.8;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+}
+
+/* Input Placeholders */
+input::placeholder, textarea::placeholder {
+    color: #aaa;
+    font-style: sans-serif;
+}
+
+select {
+    appearance: none; /* Removes default arrow */
+    -webkit-appearance: none; /* For Safari/Chrome */
+    -moz-appearance: none; /* For Firefox */
+    background-color: #fff;
+    border: 1px solid #ddd;
+    padding: 10px;
+    border-radius: 4px;
+    font-size: 1em;
+    cursor: pointer;
+
+    /* Simple downward arrow */
+    background: url('data:image/svg+xml;charset=UTF-8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 10 5"><path d="M0 0L5 5L10 0H0Z" fill="gray"/></svg>') no-repeat right 10px center;
+    background-color: #fff;
+    background-size: 10px 6px;
+}
+
+select:focus {
+    outline: none;
+    border-color: #007bff;
+}
+
+
+
+/* Responsive Design for Small Screens */
+@media (max-width: 600px) {
+    body {
+        padding: 10px;
+    }
+
+    form {
+        width: 100%;
+        padding: 15px;
+    }
+}
