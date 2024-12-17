@@ -1,0 +1,103 @@
+@charset "UTF-8";
+
+/* General Styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f9;
+    color: #333;
+}
+
+h1 {
+    text-align: center;
+    margin: 20px 0;
+    color:black;
+}
+
+/* Table Styles */
+table {
+    width: 80%;
+    margin: 20px auto;
+    border-collapse: collapse;
+    background: #fff;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.5);
+}
+
+table th, table td {
+    padding: 10px;
+    text-align: center;
+    border: 1px solid #ddd;
+}
+
+table th {
+    background-color: white;
+    color:black;
+    font-weight: bold;
+}
+
+table td img {
+    border-radius: 5px;
+}
+
+/* Total Price */
+p {
+    text-align: center;
+    font-size: 1.2rem;
+    font-weight: bold;
+    margin: 10px 0;
+    color:black;
+}
+
+/* Buttons */
+form button, form input[type="submit"], a.button {
+    background-color:  #da5ec5;
+    color:black;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1rem;
+    margin-top: 10px;
+    text-decoration: none;
+}
+
+form button:hover, form input[type="submit"]:hover, a.button:hover {
+    opacity: 0.8;
+}
+
+form input[type="number"] {
+    width: 60px;
+    padding: 5px;
+    border: 1px solid #ddd;
+    border-radius: 3px;
+    text-align: center;
+}
+
+form {
+    display: inline-block;
+}
+
+/* Continue Shopping and Place Order Buttons */
+form[method="get"], form[action="PlaceOrderServlet"] {
+    text-align: center;
+    display: block;
+    margin: 10px auto;
+}
+
+/* Empty Cart Message */
+p {
+    text-align: center;
+    font-size: 1.1rem;
+    color:black;
+}
+
+p a {
+    color:black;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+p a:hover {
+    text-decoration: underline;
+}

@@ -62,10 +62,11 @@
                 <p><%= item.getDescription() %></p>
                 
                 <form action="AddToCartServlet" method="post">
-		        <input type="hidden" name="itemId" value="<%= item.getId() %>" />
-		        <input type="number" name="quantity" value="1" min="1" max="10" /> <!-- Quantity input -->
-		        <button type="submit">Add to Cart</button>
-		    </form>
+			        <input type="hidden" name="itemId" value="<%= item.getId() %>" />
+			        <input type="hidden" name="category" value="Men"> <!-- Pass category -->
+			        <input type="number" name="quantity" value="1" min="1" max="10" /> <!-- Quantity input -->
+			        <button type="submit">Add to Cart</button>
+		    	</form>
                 
                 
             </div>

@@ -15,11 +15,10 @@ import Items.ItemDAO;
 public class AddToCartServlet extends HttpServlet {
     private static final long serialVersionUID = 1L;
 
-    // Handle POST request
     protected void doPost(HttpServletRequest request, HttpServletResponse response)
             throws ServletException, IOException {
-
         int itemId = Integer.parseInt(request.getParameter("itemId"));
+        String category = request.getParameter("category"); // Get category from request
 
         // Get the item from the database using the itemId
         ItemDAO itemDAO = new ItemDAO();
@@ -37,10 +36,11 @@ public class AddToCartServlet extends HttpServlet {
         // Add the item to the cart
         cart.addItem(item);
 
-        // Store the updated cart in the session
+        // Save cart and current category in session
         session.setAttribute("cart", cart);
+        session.setAttribute("currentCategory", category);
 
-        // Redirect to the cart page or show a success message
+        // Redirect to the cart page
         response.sendRedirect("Cart.jsp");
     }
 }

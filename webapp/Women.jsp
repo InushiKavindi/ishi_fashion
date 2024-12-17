@@ -67,6 +67,7 @@
                 <!-- Add to Cart button -->
 		    <form action="AddToCartServlet" method="post">
 		        <input type="hidden" name="itemId" value="<%= item.getId() %>" />
+		        <input type="hidden" name="category" value="Women"> <!-- Pass category -->
 		        <input type="number" name="quantity" value="1" min="1" max="99" /> <!-- Quantity input -->
 		        <button type="submit">Add to Cart</button>
 		    </form>
